@@ -1,7 +1,7 @@
 import React from "react";
 import "./Post.css";
 import Avatar from "@mui/material/Avatar";
-export const Post = ({ username, imageUrl, caption }) => {
+export const Post = ({ username, imageUrl, caption,postUrl }) => {
   return (
     <div className="post">
       <div className="post-header">
@@ -12,7 +12,7 @@ export const Post = ({ username, imageUrl, caption }) => {
 
       <img
         className="post-image"
-        src="https://www.pinclipart.com/picdir/big/537-5374089_react-js-logo-clipart.png"
+        src={postUrl}
         alt=""
       />
       <h4 className="post-text">
